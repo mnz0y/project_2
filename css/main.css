@@ -189,9 +189,18 @@ nav .container ul li a:hover{
 .textbox{
     position: absolute;
     left: 50%;
-    top: 30%;
-    translate: -50% 0;
-    text-align: center;
+    top: 50%;
+    translate: -50% -50%;
+    
+    background-color: rgba(90, 90, 90, 0.5);
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+
    
   
     
@@ -225,7 +234,6 @@ nav .container ul li a:hover{
    
 
 }
-
 
 
 
@@ -287,7 +295,11 @@ nav .container ul li a:hover{
 .container .date{
     width: 25%;
     border: 2px solid #555;
+    
 }
+
+
+
 .select-box .container a{
     width: 30%;
     text-align: center;
@@ -306,47 +318,88 @@ nav .container ul li a:hover{
 #article1 {
     width: 100%;
     height: 600px;
+    
 }
-#article1 h2 {
-    width: 100%;
+#article1 h2{
     text-align: center;
-   margin: 50px 0;
-
+    
 }
-
 .slidewrap{
     width: 1000px;
     height: 300px;
-    margin: 0 auto;
-    background-color: #01bfff;
-   
+    margin: 50px auto;
+     overflow: hidden;
+     position: relative;
 }
-
 .slidewrap .tour{
     width: 200%;
     height: 100%;
-}
-
-.tour li {
-    width: 16.34%;
-    height: 300px;
-    background-color: gold;
-    float: left;
-   
-}
-
+    position: absolute;
     
+  
    
 
-
-
-
-.tour1 .imgbox{
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 50%;
 }
+.slidewrap .tour li{
+    width: 16.15%;
+    height: 100%;
+    margin: 0 5px;
+    float: left;
+    background-color: aquamarine;
+    
+    
+}
+
+.slidewrap span{
+    display: inline-block;
+    position: absolute;
+}
+.left{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    text-align: center;
+    top: 50%;
+    translate: 0 -50%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.left:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.left img{
+    width: 20px;
+    height: 40px;
+    padding: 8px 5px 0 0;
+    
+}
+.right{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    translate: 0 -50%;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.right:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.right img{
+    width: 20px;
+    height: 40px;
+    padding: 8px 0 0 5px;
+    
+}
+
+
+
 
 
 /* 문단2 */
