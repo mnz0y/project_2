@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navi Tour</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+     <script>
+        function slide(){
+            $('.move').stop().animate({marginLeft:-1000}, 800, function(){
+                $('.move li:first').appendTo('.move');
+                $('.move').css({marginLeft:0});
+            });
+
+        
+        }
+        setInterval(slide, 3000);
+     </script>
+
+</head>
+
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container">
+
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <h2>나비투어</h2>
+                <span><input type="text" placeholder="검색어를 입력해주세요." maxlength="13"><button><img src="img/qq.png"
+                            alt="돋보기"></button></span>
+            </div>
+
+            <div class="icon">
+                <a href="#">
+                    <img src="img/icon1.png" alt="icon">
+                    <p>마이메뉴</p>
+                </a>
+                <a href="#">
+                    <img src="img/icon2.png" alt="icon">
+                    <p>예약내역</p>
+                </a>
+                <a href="#">
+                    <img src="img/icon3.png" alt="icon">
+                    <p>찜</p>
+                </a>
+            </div>
+        </div>
+
+        </header>
+        <nav>
+            <div class="container">
+                <img src="img/i.png" alt="icon">
+                <ul>
+                    <li><a href="#">해외여행</a></li>
+                    <li><a href="#">국내여행</a></li>
+                    <li><a href="#">항공</a></li>
+                    <li><a href="#">호텔</a></li>
+                    <li><a href="#">투어/패스</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="slider">
+            <ul class="move">
+                <li>
+                    <div class="img1">
+                        <div class="textbox">
+                        <h2>이집트</h2>
+                        <p>고대 문명이 살아 숨 쉬는 곳</p>
+                        <a href="#">예약하기</a>
+                    </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="img2">
+                        <div class="textbox">
+                            <h2>프랑스</h2>
+                            <p>낭만의 도시 파리</p>
+                            <a href="#">예약하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="img3">
+                        <div class="textbox">
+                            <h2>스위스</h2>
+                            <p>자연과 사람의 조화가 아름다운 곳</p>
+                            <a href="#">예약하기</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="select-box">
+            <div class="container"></div>
+        </div>
+
+
+        <div id="article1">
+            <div class="container">
+                <h2>투어추천 상품</h2>
+                <ul class="tour">
+                    <li>
+                        <a href="#" class="tour1">
+                            <div class="imgbox"></div>
+                            <div class="text"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tour1">
+                            <div class="imgbox"></div>
+                            <div class="text"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tour1">
+                            <div class="imgbox"></div>
+                            <div class="text"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tour1">
+                            <div class="imgbox"></div>
+                            <div class="text"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tour1">
+                            <div class="imgbox"></div>
+                            <div class="text"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tour1">
+                            <div class="imgbox"></div>
+                            <div class="text"></div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div id="article2">
+            <div class="container"></div>
+        </div>
+        <div id="vanner"></div>
+        <div id="article3">
+            <div class="container">
+                <h2>인기 급상승 여행지</h2>
+                <div class="tour2">
+                    <a href="#">
+                        <p>삿포로</p>
+                    </a>
+                    <a href="#">
+                        <p>대만</p>
+                    </a>
+                    <a href="#">
+                        <p>나트랑</p>
+                    </a>
+                    <a href="#">
+                        <p>홍콩</p>
+                    </a>
+                    <a href="#">
+                        <p>오사카</p>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="article4"></div>
+        <div id="article5">
+            <div class="container"></div>
+        </div>
+        <div id="article6">
+            <div class="container"></div>
+        </div>
+
+        <div class="footernav">
+            <div class="container"></div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="textbox1"></div>
+                <div class="textbox2"></div>
+                <div class="textbox3"></div>
+                <p class="copyright"></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
