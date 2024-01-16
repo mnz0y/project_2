@@ -10,17 +10,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-     <script>
-        function slide(){
-            $('.move').stop().animate({marginLeft:-1000}, 800, function(){
+    <script>
+        function slide() {
+            var w = window.innerWidth - 17;
+            console.log(w)
+            $('.move').stop().animate({ marginLeft: -w }, 2000, function () {
                 $('.move li:first').appendTo('.move');
-                $('.move').css({marginLeft:0});
+                $('.move').css({ marginLeft: 0 });
             });
-
-        
         }
-        setInterval(slide, 3000);
-     </script>
+        setInterval(slide, 4500);
+
+        // $(function () {
+        //     $('.left').click(function () {
+        //         $('.tour li:last').prependTo('.tour');
+        //         $('.tour').css('margin-left', '-33.33%');
+        //         $('.tour').stop().animate({ marginLeft: 0 }, 800);
+        //     });
+        //     $('.right').click(function () {
+        //         $('.tour').stop().animate({ marginLeft: '-33.33%' }, 800, function () {
+        //             $('.tour li:first').appendTo('.tour');
+        //             $('.tour').css({ marginLeft: 0 });
+        //         });
+        //     });
+        // });
+    </script>
 
 </head>
 
@@ -30,28 +44,28 @@
         <header>
             <div class="container">
 
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-                <h2>나비투어</h2>
-                <span><input type="text" placeholder="검색어를 입력해주세요." maxlength="13"><button><img src="img/qq.png"
-                            alt="돋보기"></button></span>
-            </div>
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                    <h2>나비투어</h2>
+                    <span><input type="text" placeholder="검색어를 입력해주세요." maxlength="13"><button><img src="img/qq.png"
+                                alt="돋보기"></button></span>
+                </div>
 
-            <div class="icon">
-                <a href="#">
-                    <img src="img/icon1.png" alt="icon">
-                    <p>마이메뉴</p>
-                </a>
-                <a href="#">
-                    <img src="img/icon2.png" alt="icon">
-                    <p>예약내역</p>
-                </a>
-                <a href="#">
-                    <img src="img/icon3.png" alt="icon">
-                    <p>찜</p>
-                </a>
+                <div class="icon">
+                    <a href="#">
+                        <img src="img/icon1.png" alt="icon">
+                        <p>마이메뉴</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/icon2.png" alt="icon">
+                        <p>예약내역</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/icon3.png" alt="icon">
+                        <p>찜</p>
+                    </a>
+                </div>
             </div>
-        </div>
 
         </header>
         <nav>
@@ -65,16 +79,17 @@
                     <li><a href="#">투어/패스</a></li>
                 </ul>
             </div>
+
         </nav>
         <div id="slider">
             <ul class="move">
                 <li>
                     <div class="img1">
                         <div class="textbox">
-                        <h2>이집트</h2>
-                        <p>고대 문명이 살아 숨 쉬는 곳</p>
-                        <a href="#">예약하기</a>
-                    </div>
+                            <h2>이집트</h2>
+                            <p>고대 문명이 살아 숨 쉬는 곳</p>
+                            <a href="#">예약하기</a>
+                        </div>
 
                     </div>
                 </li>
@@ -82,9 +97,9 @@
                     <div class="img2">
                         <div class="textbox">
                             <h2>프랑스</h2>
-                            <p>낭만의 도시 파리</p>
+                            <p>파리의 낭만이 있는 곳</p>
                             <a href="#">예약하기</a>
-                    </div>
+                        </div>
                 </li>
                 <li>
                     <div class="img3">
@@ -92,56 +107,88 @@
                             <h2>스위스</h2>
                             <p>자연과 사람의 조화가 아름다운 곳</p>
                             <a href="#">예약하기</a>
-                    </div>
+                        </div>
                 </li>
             </ul>
         </div>
         <div class="select-box">
-            <div class="container"></div>
+            <div class="container">
+                <h2>패키지 여행</h2>
+                <div class="city">
+                    <input type="text" placeholder="어디로 떠나고 싶으세요?">
+                </div>
+                <select>
+                    <option value="start" selected>출발예정월</option>
+                    <option value="1월">2024년 01월</option>
+                    <option value="2월">2024년 02월</option>
+                    <option value="3월">2024년 03월</option>
+                    <option value="4월">2024년 04월</option>
+                    <option value="5월">2024년 05월</option>
+                    <option value="6월">2024년 06월</option>
+                    <option value="7월">2024년 07월</option>
+                    <option value="8월">2024년 08월</option>
+                    <option value="9월">2024년 09월</option>
+
+                </select>
+
+                <input type="date" class="date">
+                <a href="#">검색하기</a>
+
+            </div>
         </div>
 
 
         <div id="article1">
             <div class="container">
                 <h2>투어추천 상품</h2>
-                <ul class="tour">
-                    <li>
-                        <a href="#" class="tour1">
-                            <div class="imgbox"></div>
-                            <div class="text"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tour1">
-                            <div class="imgbox"></div>
-                            <div class="text"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tour1">
-                            <div class="imgbox"></div>
-                            <div class="text"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tour1">
-                            <div class="imgbox"></div>
-                            <div class="text"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tour1">
-                            <div class="imgbox"></div>
-                            <div class="text"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tour1">
-                            <div class="imgbox"></div>
-                            <div class="text"></div>
-                        </a>
-                    </li>
-                </ul>
+                <div class="slidewrap">
+                    
+                    <ul class="tour">
+                        <li>
+                            <a href="#" class="tour1">
+                                <div class="imgbox" style="background-image: url(img/mongol.jpg);"></div>
+                                <div class="text">
+                                    <h3>몽골/테를지 신게르 2인실 핵심투어 4일</h3>
+                                    <p>#별도보고 #신게르 #핵심투어 #별빛힐링</p>
+                                    <span>699,900d원 ~</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tour1">
+                                <div class="imgbox"></div>
+                                <div class="text"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tour1">
+                                <div class="imgbox"></div>
+                                <div class="text"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tour1">
+                                <div class="imgbox"></div>
+                                <div class="text"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tour1">
+                                <div class="imgbox"></div>
+                                <div class="text"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tour1">
+                                <div class="imgbox"></div>
+                                <div class="text"></div>
+                            </a>
+                        </li>
+                    </ul>
+                 <span class="left"><img src="img/icon4.png" alt="icon"></span>   
+                <span class="right"><img src="img/icon5.png" alt="icon"></span>
+                </div>
+                
 
             </div>
         </div>
