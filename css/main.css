@@ -475,6 +475,8 @@ nav .container ul li a:hover{
     width: 100%;
     height: 60%;
 }
+
+
 .txt{
     width: 100%;
     padding: 5px;
@@ -482,6 +484,7 @@ nav .container ul li a:hover{
 .txt p:nth-of-type(2){
     text-align: right;
     color: tomato;
+    font-weight: bold;
 }
 
 .clickbox2{
@@ -632,13 +635,48 @@ video{
 .videobox{
     width: 60%;
     height: 60%;
-    border: 10px solid #01bfff;
+    border: 1rem solid #01bfff;
     position: absolute;
     text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+.videobox p{
+    line-height: 80px;
+    font-size: 1.8em;
+}
+.videobox p b{
+    letter-spacing: 20px;
+    font-size: 50px;
+}
+.videobox p b::after{
+    content: "";
+    background-image: url(../img/logo.png);
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    opacity: 0.5;
+    vertical-align: super;
+}
+.videobox button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.videobox button:hover{
+    opacity: 1;
+    background-color: #01bfff;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 
