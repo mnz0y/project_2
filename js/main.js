@@ -1,3 +1,9 @@
+
+
+
+
+// 슬라이더
+
 function slide() {
     var w = window.innerWidth - 17;
     console.log(w)
@@ -7,6 +13,23 @@ function slide() {
     });
 }
 setInterval(slide, 4500);
+
+// 네비게이션
+$(function(){
+    $('nav .container img').click(function(){
+        $('.menu').slideToggl();
+    });
+});
+$(function(){
+    $('nav>.container>ul>li>a').hover(function(){
+        $('.menu').slideToggl();
+    });
+});
+
+
+
+
+// 문단1
 
 $(function () {
     $('.left').click(function () {
