@@ -19,9 +19,6 @@ a {
     color: #333;
 }
 
-
-
-/* 헤더 */
 #wrap {
     width: 100%;
     height: auto;
@@ -34,6 +31,9 @@ a {
     margin: 0 auto;
 
 }
+
+/* 헤더 */
+
 
 header {
     width: 100%;
@@ -113,6 +113,9 @@ header .container{
     width: 20px;
     height: 20px;
 }
+header>.container>a{
+    display: none;
+}
 
 
 /* 네비게이션 */
@@ -126,12 +129,15 @@ nav .container{
     flex-flow: row wrap;
     align-items: center;
 }
+nav .container img{
+    cursor: pointer;
+}
 nav .container>ul{
     display: flex;
 }
 nav .container>ul>li>a{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 13px;
     transition: 0.5s;
 }
 nav .container>ul>li>a:hover{
@@ -163,6 +169,7 @@ nav .container>ul>li>a:hover{
 .list dl dd li{
     padding: 5px 0;
 }
+
 
 
 
@@ -233,4 +240,32 @@ footer .container{
     width: 100%;
     font-size: 13px;
     text-align: center;
+}
+
+@media (max-width:599px) {
+    .container {
+        width: 100%;
+    }
+    .icon{
+        display: none;
+    }
+    header>.container>a{
+        display: inline-block;
+    }
+    nav{display: none;}
+    
+}
+@media (min-width:600px) and (max-width:1216px) {
+    .container {
+        width: 100%;
+    }
+    .icon{
+        display: none;
+    }
+    header>.container>a{
+        display: inline-block;
+    }
+    nav{display: none;}
+
+    
 }
