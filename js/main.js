@@ -30,12 +30,6 @@ $(function(){
         }
     });
 
-    $('header .container a').click(function(){
-        $('.menu').slideToggle();
-        if($('.menu').css("display")=="block"){
-            $('.menu').css("display","flex")
-        }
-    });
 
 
 });

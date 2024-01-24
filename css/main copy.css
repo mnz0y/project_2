@@ -4,27 +4,29 @@
 /* 슬라이더 */
 
 #slider {
-    width:100%;
+    width: 100%;
     height: 500px;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    
-  
+
+
 }
-.move{
+
+.move {
     width: 300%;
     height: 100%;
     margin: 0 auto;
-    
+
 }
-.move li{
+
+.move li {
     width: 33.33%;
-    height:100%;
+    height: 100%;
     float: left;
 }
 
-.move li .img1{
+.move li .img1 {
     background-image: url(../img/Egypt.jpg);
     background-position: center;
     background-size: cover;
@@ -32,7 +34,8 @@
     height: 100%;
     position: relative;
 }
-.move li .img2{
+
+.move li .img2 {
     background-image: url(../img/paris.jpg);
     background-position: bottom;
     background-size: cover;
@@ -40,7 +43,8 @@
     height: 100%;
     position: relative;
 }
-.move li .img3{
+
+.move li .img3 {
     background-image: url(../img/swiss.jpg);
     background-position: top;
     background-size: cover;
@@ -48,7 +52,8 @@
     height: 100%;
     position: relative;
 }
-.textbox{
+
+.textbox {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -57,51 +62,56 @@
     width: 100%;
     height: 100%;
     display: flex;
-    flex-flow:column wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
-.textbox h2{
+
+.textbox h2 {
     color: white;
     font-size: 7vw;
     letter-spacing: 30px;
     text-shadow: 0 0 20px #444;
 }
-.textbox p{
+
+.textbox p {
     font-weight: 500;
     font-size: 1.5vw;
     text-shadow: 0 0 10px #333;
     margin-bottom: 1vw;
     color: #ddd;
 }
-.textbox a{
+
+.textbox a {
     font-size: 0.9vw;
     padding: 3px 20px;
     border-radius: 10px;
     opacity: 1;
     transition: 0.4s;
-     background-color: #ddd;
+    background-color: #ddd;
     border: 3px solid white;
 }
-.textbox a:hover{
+
+.textbox a:hover {
     opacity: 0.6;
 }
 
-.move li .img2{
+.move li .img2 {
     background-image: url(../img/paris.jpg);
     background-position: bottom;
     background-size: cover;
     width: 100%;
     height: 100%;
-   
+
 }
-.move li .img3{
+
+.move li .img3 {
     background-image: url(../img/swiss.jpg);
     background-position: top;
     background-size: cover;
     width: 100%;
     height: 100%;
-   
+
 }
 
 
@@ -112,9 +122,10 @@
     width: 100%;
     height: 300px;
     position: relative;
-    
+
 }
-.select-box .container{
+
+.select-box .container {
     position: absolute;
     top: -30%;
     left: 50%;
@@ -125,40 +136,45 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-content: space-evenly;
-    
+
 }
-.select-box .container h2{
+
+.select-box .container h2 {
     width: 100%;
     text-align: center;
     font-size: 30px;
 
 }
-.city{
+
+.city {
     width: 25%;
     height: 50px;
     border: 2px solid #555;
 }
-.container select{
+
+.container select {
     width: 25%;
     border: 2px solid #555;
 }
-.container .date{
+
+.container .date {
     width: 25%;
     border: 2px solid #555;
-    
+
 }
 
 
 
-.select-box .container a{
-    width: 30%;
+.select-box .container a {
+    width: 40%;
     text-align: center;
     background-color: #01bfff;
     padding: 10px;
     border-radius: 10px;
     transition: 0.5s;
 }
-.select-box .container a:hover{
+
+.select-box .container a:hover {
     font-weight: bold;
     background-color: #FFD300;
 }
@@ -173,25 +189,29 @@
 #article1 {
     width: 100%;
     height: 500px;
-    
+
 }
-#article1 h2{
+
+#article1 h2 {
     text-align: center;
-    
+
 }
-.slidewrap{
+
+.slidewrap {
     width: 1000px;
     height: 300px;
     margin: 50px auto;
-     overflow: hidden;
-     position: relative;
+    overflow: hidden;
+    position: relative;
 }
-.slidewrap .tour{
+
+.slidewrap .tour {
     width: 200%;
     height: 100%;
     position: absolute;
 }
-.slidewrap .tour li{
+
+.slidewrap .tour li {
     width: 16.15%;
     height: 100%;
     margin: 0 5px;
@@ -199,46 +219,51 @@
     border: 1px solid #555;
 }
 
-.tour1 .imgbox1{
+.tour1 .imgbox1 {
     width: 100%;
     height: 60%;
     overflow: hidden;
 
 }
-.tour1 .imgbox1 img{
+
+.tour1 .imgbox1 img {
     width: 100%;
     height: 100%;
     transform: scale(1);
     transition: 0.8s;
 }
-.tour1 .imgbox1 img:hover{
+
+.tour1 .imgbox1 img:hover {
     transform: scale(1.2);
     opacity: 0.7;
 }
 
-.tour1 .text1{
+.tour1 .text1 {
     padding: 10px;
 }
-.tour1 .text1 p:nth-of-type(1){
-    margin: 5px ;
+
+.tour1 .text1 p:nth-of-type(1) {
+    margin: 5px;
     color: #555;
     font-size: 15px;
 }
-.tour1 .text1 p:nth-of-type(2){
+
+.tour1 .text1 p:nth-of-type(2) {
     text-align: right;
     margin: 10px 5px;
     font-weight: bold;
 }
 
-   
 
 
-.slidewrap span{
+
+.slidewrap span {
     display: inline-block;
     position: absolute;
     border: 1px solid #ddd;
 }
-.left{
+
+.left {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -249,17 +274,20 @@
     opacity: 0.5;
     transition: 0.5s;
 }
-.left:hover{
+
+.left:hover {
     opacity: 1;
     cursor: pointer;
 }
-.left img{
+
+.left img {
     width: 20px;
     height: 40px;
     padding: 8px 5px 0 0;
-    
+
 }
-.right{
+
+.right {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -271,15 +299,17 @@
     opacity: 0.5;
     transition: 0.3s;
 }
-.right:hover{
+
+.right:hover {
     opacity: 1;
     cursor: pointer;
 }
-.right img{
+
+.right img {
     width: 20px;
     height: 40px;
     padding: 8px 0 0 5px;
-    
+
 }
 
 
@@ -293,92 +323,109 @@
     height: 700px;
 }
 
-#article2 .container{
+#article2 .container {
     display: flex;
     flex-flow: row wrap;
-   
+
 }
-.click1{
+
+.click1 {
     width: 50%;
     height: 50px;
-    
+
     text-align: center;
     font-size: 20px;
     padding: 10px 0;
 }
 
-.show1{
+.show1 {
     border-left: 1px solid #555;
     border-top: 1px solid #555;
     border-right: 1px solid #555;
     font-weight: bold;
 }
-.show2{
+
+.show2 {
     border-bottom: 1px solid #555;
-   
+
 }
 
-.click2{
+.click2 {
     width: 50%;
     height: 50px;
     text-align: center;
-    
+
     font-size: 20px;
     padding: 10px 0;
 }
-.clickbox1{
+
+.clickbox1 {
     width: 100%;
     height: 500px;
     text-align: center;
-    
+
 }
-.clickbox1 .imgbox2{
+
+.clickbox1 .imgbox2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.clickbox1 .imgbox2 a{
+
+.clickbox1 .imgbox2 a {
     width: 23%;
     height: 300px;
     margin: 5% 1%;
 }
-.imgbox2 a{
+
+.imgbox2 a {
     display: flex;
     flex-flow: row wrap;
     text-align: left;
 
 }
-.imgbox2 a img{
+
+.imgbox2 a img {
     width: 100%;
     height: 60%;
 }
 
 
-.txt{
+.txt {
     width: 100%;
     padding: 5px;
+    line-height: 30px;
 }
-.txt p:nth-of-type(2){
+
+.txt p:nth-of-type(2) {
     text-align: right;
     color: tomato;
     font-weight: bold;
 }
 
-.clickbox2{
+.clickbox2 {
     width: 100%;
     height: 500px;
     text-align: center;
     display: none;
 }
-.clickbox2 .imgbox2{
+
+.clickbox2 .imgbox2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.clickbox2 .imgbox2 a{
+
+.clickbox2 .imgbox2 a {
     width: 23%;
     height: 300px;
     margin: 5% 1%;
+}
+.clickbox2 .imgbox2 a:hover{
+    box-shadow: 0 0 5px #555;
+}
+.clickbox1 .imgbox2 a:hover{
+    box-shadow: 0 0 5px #555;
 }
 
 
@@ -392,22 +439,26 @@
     height: 150px;
     background-color: #a8dff1;
 }
-#vanner .container{
+
+#vanner .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#vanner .container img{
+
+#vanner .container img {
     width: 200px;
     height: 130px;
 }
-.cardtext p{
+
+.cardtext p {
     font-size: 20px;
     letter-spacing: 4px;
     padding: 5px;
     font-weight: 500;
 }
-.cardtext span{
+
+.cardtext span {
     font-size: 13px;
     color: #555;
     padding: 5px;
@@ -420,7 +471,7 @@
 #article3 {
     width: 100%;
     height: 600px;
-    
+
 }
 
 #article3 .container h2 {
@@ -448,41 +499,47 @@
     opacity: 0.6;
     transition: 0.3s;
 }
-.tour2 a:hover{
+
+.tour2 a:hover {
     opacity: 1;
 }
 
-.tour2 a:nth-of-type(1){
+.tour2 a:nth-of-type(1) {
     background-image: url(../img/japan1.png);
     background-position: center;
     background-size: cover;
 }
-.tour2 a:nth-of-type(2){
+
+.tour2 a:nth-of-type(2) {
     background-image: url(../img/taiwan1.png);
     background-position: center;
     background-size: cover;
 }
-.tour2 a:nth-of-type(3){
+
+.tour2 a:nth-of-type(3) {
     background-image: url(../img/sea.png);
     background-position: center;
     background-size: cover;
 }
-.tour2 a:nth-of-type(4){
+
+.tour2 a:nth-of-type(4) {
     background-image: url(../img/hongkong.png);
     background-position: center;
     background-size: cover;
 }
-.tour2 a:nth-of-type(5){
+
+.tour2 a:nth-of-type(5) {
     background-image: url(../img/japan2.png);
     background-position: center;
     background-size: cover;
 }
-.tour2 a:nth-of-type(6){
+
+.tour2 a:nth-of-type(6) {
     background-color: #eee;
     display: none;
 }
 
-.tour2 a:nth-of-type(6) b{
+.tour2 a:nth-of-type(6) b {
     display: block;
     text-align: center;
 }
@@ -506,20 +563,23 @@
     width: 100%;
     height: 650px;
 }
-.video{
+
+.video {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
 }
-video{
+
+video {
     width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     opacity: 0.6;
 }
-.videobox{
+
+.videobox {
     width: 60%;
     height: 60%;
     border: 1.0vw solid #01bfff;
@@ -527,22 +587,25 @@ video{
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
-.videobox p{
+
+.videobox p {
     line-height: 2.5vw;
     font-size: 1.0vw;
 }
-.videobox p b{
+
+.videobox p b {
     letter-spacing: 1.0vw;
     font-size: 2.5vw;
 }
-.videobox p b::after{
+
+.videobox p b::after {
     content: "";
     background-image: url(../img/logo.png);
     background-size: 2.5vw 2.5vw;
@@ -552,7 +615,8 @@ video{
     opacity: 0.5;
     vertical-align: super;
 }
-.videobox button{
+
+.videobox button {
     width: 7.8vw;
     height: 2.1vw;
     border: none;
@@ -561,7 +625,8 @@ video{
     font-size: 0.8vw;
     margin: 0.8vw;
 }
-.videobox button:hover{
+
+.videobox button:hover {
     opacity: 1;
     background-color: #01bfff;
     font-weight: bold;
@@ -578,30 +643,32 @@ video{
     height: 700px;
 }
 
-#article5 .container h2{
+#article5 .container h2 {
     width: 100%;
     text-align: center;
 
 }
-#article5 .container h2 a::after{
+
+#article5 .container h2 a::after {
     content: "";
     background-image: url(../img/icon5.png);
     background-size: 10px 20px;
     display: inline-block;
     width: 10px;
     height: 20px;
- 
+
     margin: 0 0 0 10px;
-    
+
 }
 
-#article5 .container{
+#article5 .container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: space-evenly;
 }
-.shop{
+
+.shop {
     width: 48%;
     height: 400px;
     border: 1px solid #ddd;
@@ -612,21 +679,24 @@ video{
     align-content: space-evenly;
     text-align: center;
 }
-.shop img{
+
+.shop img {
     width: 90%;
     height: 60%;
 }
-.text2 p:nth-of-type(1){
+
+.text2 p:nth-of-type(1) {
     font-size: 15px;
     margin-bottom: 10px;
     color: #2982a0;
     font-weight: 500;
 }
-.text2 p:nth-of-type(2){
+
+.text2 p:nth-of-type(2) {
     font-size: 19px;
     font-weight: 500;
 }
-    
+
 
 
 
@@ -640,20 +710,24 @@ video{
     height: 500px;
     background-color: rgb(245, 242, 227);
 }
-#article6 .container{
+
+#article6 .container {
     display: flex;
     flex-flow: row wrap;
 }
-#article6 .container h2{
+
+#article6 .container h2 {
     width: 100%;
     padding: 30px 0;
     height: 100px;
 }
-.leftbox{
+
+.leftbox {
     width: 30%;
     height: 400px;
 }
-.leftbox ul li{
+
+.leftbox ul li {
     width: 200px;
     height: 50px;
     background-color: #d3b831;
@@ -664,36 +738,42 @@ video{
     cursor: pointer;
     transition: 0.3s;
 }
-.leftbox ul li:hover{
+
+.leftbox ul li:hover {
     opacity: 0.7;
-    
+
 }
-.leftbox ul li b{
+
+.leftbox ul li b {
     float: right;
 }
-.rightbox{
+
+.rightbox {
     width: 70%;
     height: 400px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.rightbox a{
+.rightbox a {
     width: 45%;
     height: 350px;
     transition: 0.4s;
 }
-.rightbox a:hover{
+
+.rightbox a:hover {
     opacity: 0.5;
 }
-.img6{
+
+.img6 {
     width: 50%;
     height: 65%;
     float: left;
     border-radius: 10px;
     overflow: hidden;
 }
-.imgbox6{
+
+.imgbox6 {
     width: 45%;
     height: 30%;
     margin: 1% 2.5%;
@@ -701,151 +781,566 @@ video{
     border-radius: 10px;
     overflow: hidden;
 }
-.rightbox img{
+
+.rightbox img {
     width: 100%;
     height: 100%;
 }
-.text6{
+
+.text6 {
     width: 100%;
-    height:35%;
+    height: 35%;
     clear: both;
     padding: 20px 0;
 }
-.text6 p{
+
+.text6 p {
     font-size: 15px;
     padding: 5px 0;
 }
-.text6 span{
+
+.text6 span {
     display: block;
     text-align: right;
     padding: 0 10px;
 }
-.text6 span b{
+
+.text6 span b {
     font-size: 18px;
 }
-.rightbox:nth-of-type(3){
+
+.rightbox:nth-of-type(3) {
     display: none;
 }
 
-@media (max-width:599px){
+
+
+
+
+
+@media (max-width:749px) {
     /* 슬라이더 */
-    
-    .textbox h2{
+
+    .textbox h2 {
         font-size: 8vw;
     }
-    .textbox p{
+
+    .textbox p {
         font-size: 2vw;
         margin: 2vw;
     }
-    .textbox a{
+
+    .textbox a {
         font-size: 2vw;
         padding: 2px 20px;
     }
 
     /* 선택박스 */
-    
-    .select-box .container{
-        height: 400px;
+
+    .select-box .container {
+        height: 350px;
         align-content: space-evenly;
-        top: 0;
-        left: 0;
-        translate: 0 0;
     }
-    .select-box .container h2{
+
+    .city {
+        width: 80%;
+        height: 50px;
+    }
+
+    .container select {
+        width: 80%;
+        height: 50px;
+    }
+
+    .container .date {
+        width: 80%;
+        height: 50px;
+    }
+
+    .select-box .container a {
+        width: 80%;
+    }
+
+    /* 문단1 */
+
+    #article1 {
+        height: auto;
+    }
+
+    #article1 h2 {
+        padding: 20px;
+
+    }
+
+    .slidewrap {
+        width: 70%;
+    }
+
+    .slidewrap .tour li {
+        width: 49%;
+    }
+
+    /* 문단2 */
+
+
+
+    #article2 .container {
+        justify-content: center;
+        height: auto;
+
+    }
+
+    .click1 {
+        width: 45%;
+        font-size: 17px;
+    }
+
+    .click2 {
+        width: 45%;
+        font-size: 17px;
+    }
+
+    .clickbox1 {
+        height: auto;
+
+    }
+
+    .clickbox1>img {
         width: 100%;
-        text-align: center;
-        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .clickbox1 .imgbox2 {
+        flex-wrap: wrap;
+    }
+
+    .clickbox1 .imgbox2 a {
+        width: 65%;
+    }
+
+    .clickbox2 {
+        height: auto;
+    }
+
+    .clickbox2>img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .clickbox2 .imgbox2 {
+        flex-wrap: wrap;
+    }
+
+    .clickbox2 .imgbox2 a {
+        width: 80%;
+    }
     
-    }
-    .city{
-        width: 80%;
-        height: 50px;
-    }
-    .container select{
-        width: 80%;
-        height: 50px;
-    }
-    .container .date{
-        width: 80%;
-        height: 50px;
-    }
-    
-    .select-box .container a{
-        width: 80%;
-    }
-    
-   
+
+    /* 배너 */
+
+
+
+#vanner .container {
+    width: 97%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#vanner .container img {
+    width: 190px;
+    height: 110px;
+}
+
+
+/* 문단3 */
+
+#article3 {
+    height: auto;
+}
+
+#article3 .container{
+    width: 100%;
+    height: auto;
+}
+
+#article3 .container h2 {
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
 
 }
-@media (min-width:600px) and (max-width:1216px){
+
+.tour2 {
+    flex-wrap: wrap;
+    height: 500px;
+
+}
+
+.tour2 a {
+    width:30%;
+    height: 30%;
+    margin: 20px;
+}
+
+.tour2 a:nth-of-type(6){
+    display: inline-block;
+}
+.tour2 a:nth-of-type(6) p{
+    color: black;
+}
+
+/* 문단4 */
+
+
+#article4 {
+    height: 550px;
+}
+
+.videobox{
+    width: 60vw;
+    height: 40vw;
+}
+.videobox p{
+    line-height: 2.5vw;
+    font-size: 1.5vw;
+}
+.videobox p b{
+    font-size: 2.5vw;
+}
+
+.videobox button{
+    width: 10vw;
+    height: 2.5vw;
+}
+
+
+/* 문단5 */
+
+
+#article5 {
+    height:auto;
+}
+
+#article5 .container h2{
+    width: 100%;
+    text-align: center;
+    margin-top: -50px;
+
+}
+
+
+#article5 .container{
+    
+    justify-content: center;
+    height: 900px;
+}
+.shop{
+    width: 70%;
+    
+}
+
+.text2 p:nth-of-type(2){
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* 문단6 */
+
+
+#article6 {
+    height: auto;
+}
+
+#article6 .container{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+}
+#article6 .container h2{
+    width: 90%;
+    padding: 10px 0;
+    height: 50px;
+}
+
+
+.leftbox{
+    width: 80%;
+    height: auto;
+}
+.leftbox ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.rightbox{
+    height: auto;
+    flex-flow: row wrap;
+}
+
+.rightbox a{
+    width: 100%;
+}
+
+
+
+
+
+}
+
+@media (min-width:750px) and (max-width:1216px) {
     /* 슬라이더 */
 
-    .textbox h2{
+    .textbox h2 {
         font-size: 8vw;
     }
-    .textbox p{
+
+    .textbox p {
         font-size: 2vw;
     }
-    .textbox a{
+
+    .textbox a {
         font-size: 1vw;
     }
 
     /* 선택박스 */
-    .select-box {
-        width: 100%;
-        height: 300px;
-        position: relative;
-        
-    }
-    .select-box .container{
-        position: absolute;
-        top: -30%;
-        left: 50%;
-        translate: -50% 0;
-        background-color: white;
-        border: 3px solid #01bfff;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-content: space-evenly;
-        
-    }
-    .select-box .container h2{
-        width: 100%;
-        text-align: center;
-        font-size: 30px;
-    
-    }
-    .city{
-        width: 25%;
+    .city {
+        width: 28%;
         height: 50px;
-        border: 2px solid #555;
     }
-    .container select{
-        width: 25%;
-        border: 2px solid #555;
+
+    .container select {
+        width: 28%;
+        height: 50px;
     }
-    .container .date{
-        width: 25%;
-        border: 2px solid #555;
-        
+
+    .container .date {
+        width: 28%;
+        height: 50px;
+    }
+
+    .select-box .container a {
+        width: 45%;
+
+    }
+
+
+    /* 문단1 */
+
+
+    .slidewrap {
+        width: 80%;
+    }
+
+    .slidewrap .tour li {
+        width: 24.5%;
+    }
+
+    .tour1 .text1 h3 {
+        font-size: 17px;
+    }
+
+    .tour1 .text1 p:nth-of-type(1) {
+        margin: 5px 0;
+        font-size: 13.5px;
+    }
+
+    /* 문단2 */
+
+    #article2 {
+        height: auto;
+    }
+    #article2 .container{
+        height: auto;
+        justify-content: center;
+    }
+
+    .click1 {
+        width: 45%;
     }
     
-    
-    
-    .select-box .container a{
-        width: 30%;
-        text-align: center;
-        background-color: #01bfff;
-        padding: 10px;
-        border-radius: 10px;
-        transition: 0.5s;
+    .click2 {
+        width: 45%;
     }
-    .select-box .container a:hover{
-        font-weight: bold;
-        background-color: #FFD300;
+
+    .clickbox1 {
+        height: auto;
     }
-    
-    
-    
+
+    .clickbox1>img{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .clickbox1 .imgbox2 {
+        flex-wrap: wrap;
+    }
+
+    .clickbox1 .imgbox2 a {
+        width: 35%;
+        margin: 5% 2%;
+    }
+
+    .txt p{
+        font-size: 15px;
+    }
+
+    .clickbox2 {
+        height: auto;
+       
+    }
+    .clickbox2>img{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .clickbox2 .imgbox2 {
+        flex-wrap: wrap;
+    }
+
+    .clickbox2 .imgbox2 a {
+        width: 40%;
+        margin: 5% 2%;
+    }
+
+    /* 배너 */
+
+   
+    #vanner .container{
+        height: 100%;
+        width: 97%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    /* 문단3 */
+
+    #article3{
+        height: auto;
+    }
+
+#article3 .container{
+    width: 100%;
+    }
+
+.tour2 {
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.tour2 a {
+    width: 26%;
+    height: 30%;
+    margin:3%;
+    padding: 3%;
+}
+
+.tour2 a:nth-of-type(6){
+    display: inline-block;
+}
+.tour2 a:nth-of-type(6) p{
+    color: black;
+}
+
+/* 문단4 */
+
+
+#article4 {
+    height: 600px;
+}
+
+.videobox{
+    width: 60vw;
+    height: 35vw;
+
+}
+.videobox p{
+    font-size: 1.5vw;
+}
+.videobox p b{
+    font-size: 2.5vw;
+}
+
+.videobox button{
+    width: 10vw;
+    height: 2.5vw;
+    font-size: 1vw;
+}
+
+/* 문단5 */
+
+
+#article5 {
+    height: auto;
+}
+
+#article5 .container h2{
+    margin-top: 50px;
+}
+
+#article5 .container{
+    width: 100%;
+    height: 600px;
+    justify-content: space-evenly;
+}
+.shop{
+    width: 40%;
+}
+
+/* 문단6 */
+
+
+#article6 {
+    height: auto;
+}
+
+#article6 .container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+}
+#article6 .container h2{
+    width: 90%;
+    padding: 10px 0;
+    height: 50px;
+}
+
+
+.leftbox{
+    width: 90%;
+    height: auto;
+}
+.leftbox ul{
+    display: flex;
+}
+.leftbox ul li{
+    margin: 20px 10px;
+}
+
+
+.rightbox{
+    width: 90%;
+    height: auto;
+    flex-flow: row wrap;
+    margin: 10px 0;
+}
+
+.rightbox a{
+    width: 45%;
+}
+
+   
+
+
+
 }

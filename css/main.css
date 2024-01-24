@@ -309,7 +309,6 @@
 .click1{
     width: 50%;
     height: 50px;
-    
     text-align: center;
     font-size: 20px;
     padding: 10px 0;
@@ -365,6 +364,7 @@
 .txt{
     width: 100%;
     padding: 5px;
+    line-height: 30px;
 }
 .txt p:nth-of-type(2){
     text-align: right;
@@ -387,6 +387,12 @@
     width: 23%;
     height: 300px;
     margin: 5% 1%;
+}
+.clickbox2 .imgbox2 a:hover{
+    box-shadow: 0 0 5px #555;
+}
+.clickbox1 .imgbox2 a:hover{
+    box-shadow: 0 0 5px #555;
 }
 
 
