@@ -38,9 +38,10 @@ a {
 header {
     width: 100%;
     height: 100px;
-    
+
 }
-header .container{
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +53,7 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
 }
 
 .logo img {
@@ -71,7 +72,7 @@ header .container{
     margin: 0 10px;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .logo span input[type="text"] {
@@ -80,10 +81,10 @@ header .container{
     padding: 5px 10px;
 }
 
-.logo span button img{
+.logo span button img {
     width: 30px;
     height: 30px;
-   
+
 }
 
 .logo span button {
@@ -103,17 +104,20 @@ header .container{
     text-align: center;
     justify-content: space-around;
     align-items: flex-end;
-    
+
 }
-.icon p:hover{
+
+.icon p:hover {
     color: #01bfff;
     transition: 0.5s;
 }
-.icon a img{
+
+.icon a img {
     width: 20px;
     height: 20px;
 }
-header>.container>a{
+
+header>.container>a {
     display: none;
 }
 
@@ -124,26 +128,32 @@ nav {
     width: 100%;
     height: 50px;
 }
-nav .container{
+
+nav .container {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 }
-nav .container img{
+
+nav .container img {
     cursor: pointer;
 }
-nav .container>ul{
+
+nav .container>ul {
     display: flex;
 }
-nav .container>ul>li>a{
+
+nav .container>ul>li>a {
     display: inline-block;
     padding: 13px;
     transition: 0.5s;
 }
-nav .container>ul>li>a:hover{
+
+nav .container>ul>li>a:hover {
     color: #01bfff;
 }
-.menu{
+
+.menu {
     width: 100%;
     height: 250px;
     z-index: 5;
@@ -151,14 +161,17 @@ nav .container>ul>li>a:hover{
     background-color: white;
     justify-content: flex-start;
 }
-.menu{
+
+.menu {
     display: none;
 }
-.list{
+
+.list {
     margin: 0 30px;
     width: 10%;
 }
-.list dl dt{
+
+.list dl dt {
     border-bottom: 2px solid #555;
     font-size: large;
     font-weight: bold;
@@ -166,7 +179,7 @@ nav .container>ul>li>a:hover{
 
 }
 
-.list dl dd li{
+.list dl dd li {
     padding: 5px 0;
 }
 
@@ -174,174 +187,240 @@ nav .container>ul>li>a:hover{
 
 
 
-/* 풋터 */
+/* 풋터 네비*/
 .footernav {
     width: 100%;
     height: 50px;
 }
-.footernav ul{
+
+.footernav ul {
     display: flex;
 }
-.footernav ul li{
+
+.footernav ul li {
     padding: 13px 20px;
 }
-.footernav ul li a:hover{
+
+.footernav ul li a:hover {
     text-decoration: underline;
 }
+
+/* 풋터 */
 
 footer {
     width: 100%;
     height: 300px;
 }
-footer .container{
+
+footer .container {
     display: flex;
     align-content: space-around;
     justify-content: space-around;
 
 }
 
-.textbox7{
+.textbox7 {
     width: 30%;
 }
 
-.textbox7:nth-of-type(2){
+.textbox7:nth-of-type(2) {
     background-color: #eee;
     border-radius: 10px;
 
 }
-.textbox7 p{
+
+.textbox7 p {
     padding: 15px;
 }
-.textbox7 p b{
+
+.textbox7 p b {
     font-size: larger;
 }
-.textbox7 p b:nth-of-type(1){
+
+.textbox7 p b:nth-of-type(1) {
     font-size: xx-large;
 }
-.textbox7 p b img{
+
+.textbox7 p b img {
     width: 30px;
     height: 30px;
     vertical-align: middle;
     margin: 5px;
 }
-.textbox7:nth-of-type(3) p img{
+
+.textbox7:nth-of-type(3) p img {
     width: 20px;
     height: 20px;
     vertical-align: middle;
     margin: 5px;
 }
-.textbox7:nth-of-type(3) p{
+
+.textbox7:nth-of-type(3) p {
     background-color: #eee;
     border-radius: 10px;
 }
 
 
-.copyright{
+.copyright {
     width: 100%;
     font-size: 13px;
     text-align: center;
 }
 
 @media (max-width:749px) {
+
     /* 헤더 */
     .container {
         width: 100%;
     }
-    .icon{
+
+    .icon {
         display: none;
     }
-    header>.container>a{
+
+    header>.container>a {
         display: inline-block;
     }
-    nav{display: none;}
+
+    nav {
+        display: none;
+    }
+
+
+    /* 풋터 네비 */
+
+    .footernav{
+        height: auto;
+    }
+
+    .footernav ul {
+        width: 100%;
+        height: 50px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footernav ul li {
+        padding: 0;
+        font-size: 10px;
+    }
+
 
     /* 풋터 */
-.footernav {
-    width: 100%;
-    height: 50px;
-}
-.footernav ul{
-    display: flex;
-}
 
-.footernav ul li a{
-    font-size: 9px;
-    padding: 5px 5px;
-    
-}
-.footernav ul li a:hover{
-    text-decoration: underline;
-}
+    footer {
+        height: auto;
+    }
 
+    footer .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: space-around;
 
+    }
 
-footer {
-    width: 100%;
-    height: 300px;
-}
-footer .container{
-    display: flex;
-    align-content: space-around;
-    justify-content: space-around;
+    .textbox7 {
+        width: 48%;
+        margin: 10px 0;
+    }
 
-}
+    .textbox7 p {
+        font-size: 12px;
+        padding: 5px;
+    }
 
-.textbox7{
-    width: 30%;
-}
+    .textbox7:nth-of-type(3) {
+        display: none;
+    }
 
-.textbox7:nth-of-type(2){
-    background-color: #eee;
-    border-radius: 10px;
+    .copyright {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+    }
 
-}
-.textbox7 p{
-    padding: 15px;
-}
-.textbox7 p b{
-    font-size: larger;
-}
-.textbox7 p b:nth-of-type(1){
-    font-size: xx-large;
-}
-.textbox7 p b img{
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    margin: 5px;
-}
-.textbox7:nth-of-type(3) p img{
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin: 5px;
-}
-.textbox7:nth-of-type(3) p{
-    background-color: #eee;
-    border-radius: 10px;
-}
+    .copyright span {
+        display: none;
+    }
 
 
-.copyright{
-    width: 100%;
-    font-size: 13px;
-    text-align: center;
 }
 
-    
-}
-@media (min-width:600px) and (max-width:1216px) {
+@media (min-width:750px) and (max-width:1216px) {
+
     /* 헤더 */
     .container {
         width: 100%;
     }
-    .icon{
+
+    .icon {
         display: none;
     }
-    header>.container>a{
+
+    header>.container>a {
         display: inline-block;
     }
-    nav{display: none;}
+
+    nav {
+        display: none;
+    }
+
+
+    /* 풋터 네비 */
+    .footernav {
+        height: auto;
+    }
+
+    .footernav ul {
+        width: 100%;
+        height: 50px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footernav ul li {
+        padding:0;
+        font-size: 15px;
+    }
+
+  
 
     
+    /* 풋터 */
+
+    footer {
+        height: auto;
+    }
+
+    footer .container {
+        display: flex;
+        align-content: space-around;
+        justify-content: space-around;
+
+    }
+
+    .textbox7 {
+        width: 45%;
+        margin: 1%;
+    }
+
+    .textbox7:nth-of-type(2) {
+        font-size: 15.5px;
+    
+    }
+
+
+
+    .textbox7:nth-of-type(3){
+        width: 92%;
+    }
+
+
+    .copyright {
+        width: 99%;
+        font-size: 9.5px;}
+
+
 }

@@ -1073,7 +1073,10 @@ video {
 }
 .leftbox ul{
     display: flex;
-    justify-content: space-between;
+}
+.leftbox ul li{
+    width: 150px;
+    margin: 10px
 }
 
 
