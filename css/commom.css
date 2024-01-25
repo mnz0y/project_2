@@ -282,7 +282,13 @@ footer .container {
         display: inline-block;
     }
 
-    nav {
+    nav .container img{
+        display: none;
+    }
+    nav>.container>ul{
+        display: none;
+    }
+    nav .menu{
         display: none;
     }
 

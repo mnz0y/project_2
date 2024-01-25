@@ -30,7 +30,13 @@ $(function(){
         }
     });
 
-
+    $('.hide').click(function(){
+        
+        $('.menu').slideToggle();
+        if($('.menu').css("display")=="block"){
+            $('.menu').css("display","flex")
+        }
+    });
 
 });
 
@@ -39,21 +45,62 @@ $(function(){
 
 
 
-// 문단1
 
-$(function () {
-    $('.left').click(function () {
-        $('.tour li:last').prependTo('.tour');
-        $('.tour').css('margin-left', '-33.33%');
-        $('.tour').stop().animate({ marginLeft: 0 }, 800);
-    });
-    $('.right').click(function () {
-        $('.tour').stop().animate({ marginLeft: '-33.33%' }, 800, function () {
-            $('.tour li:first').appendTo('.tour');
-            $('.tour').css({ marginLeft: 0 });
+
+
+    // 문단1
+    if (window.matchMedia('(max-width:749px)').matches) {
+        console.log("mobile")
+        $('.left').click(function () {
+            $('.tour li:last').prependTo('.tour');
+            $('.tour').css('margin-left', '-100%');
+            $('.tour').stop().animate({ marginLeft: 0 }, 800);
         });
-    });
-});
+        $('.right').click(function () {
+            $('.tour').stop().animate({ marginLeft: '-100%' }, 800, function () {
+                $('.tour li:first').appendTo('.tour');
+                $('.tour').css({ marginLeft: 0 });
+            });
+        });
+
+    } else if (window.matchMedia('(min-width:750px) and (max-width:1216px)').matches) {
+        console.log("tablet")
+        $('.left').click(function () {
+            $('.tour li:last').prependTo('.tour');
+            $('.tour').css('margin-left', '-50%');
+            $('.tour').stop().animate({ marginLeft: 0 }, 800);
+        });
+        $('.right').click(function () {
+            $('.tour').stop().animate({ marginLeft: '-50%' }, 800, function () {
+                $('.tour li:first').appendTo('.tour');
+                $('.tour').css({ marginLeft: 0 });
+            });
+        });
+
+
+    } else {
+        console.log("pc")
+
+        $('.left').click(function () {
+            $('.tour li:last').prependTo('.tour');
+            $('.tour').css('margin-left', '-33.33%');
+            $('.tour').stop().animate({ marginLeft: 0 }, 800);
+        });
+        $('.right').click(function () {
+            $('.tour').stop().animate({ marginLeft: '-33.33%' }, 800, function () {
+                $('.tour li:first').appendTo('.tour');
+                $('.tour').css({ marginLeft: 0 });
+            });
+        });
+
+        
+
+
+    }
+
+
+
+
 
 
 //문단2
