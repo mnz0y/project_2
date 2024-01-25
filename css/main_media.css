@@ -1,0 +1,541 @@
+@charset "utf-8";
+
+/* 모바일 사이즈 */
+
+@media (max-width:749px) {
+    /* 슬라이더 */
+
+    .textbox h2 {
+        font-size: 8vw;
+    }
+
+    .textbox p {
+        font-size: 2vw;
+        margin: 2vw;
+    }
+
+    .textbox a {
+        font-size: 2vw;
+        padding: 2px 20px;
+    }
+
+    /* 선택박스 */
+
+    .select-box .container {
+        height: 350px;
+        align-content: space-evenly;
+    }
+
+    .city {
+        width: 80%;
+        height: 50px;
+    }
+
+    .container select {
+        width: 80%;
+        height: 50px;
+    }
+
+    .container .date {
+        width: 80%;
+        height: 50px;
+    }
+
+    .select-box .container a {
+        width: 80%;
+    }
+
+    /* 문단1 */
+
+    #article1 {
+        height: auto;
+    }
+
+    #article1 h2 {
+        padding: 20px;
+
+    }
+
+    .slidewrap {
+        width: 70%;
+    }
+
+    .slidewrap .tour li {
+        width: 49%;
+    }
+
+    /* 문단2 */
+
+
+
+    #article2 .container {
+        justify-content: center;
+        height: auto;
+
+    }
+
+    .click1 {
+        width: 45%;
+        font-size: 17px;
+    }
+
+    .click2 {
+        width: 45%;
+        font-size: 17px;
+    }
+
+    .clickbox1 {
+        height: auto;
+
+    }
+
+    .clickbox1>img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .clickbox1 .imgbox2 {
+        flex-wrap: wrap;
+    }
+
+    .clickbox1 .imgbox2 a {
+        width: 65%;
+    }
+
+    .clickbox2 {
+        height: auto;
+    }
+
+    .clickbox2>img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .clickbox2 .imgbox2 {
+        flex-wrap: wrap;
+    }
+
+    .clickbox2 .imgbox2 a {
+        width: 80%;
+    }
+
+
+    /* 배너 */
+
+
+
+    #vanner .container {
+        width: 97%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #vanner .container img {
+        width: 190px;
+        height: 110px;
+    }
+
+
+    /* 문단3 */
+
+    #article3 {
+        height: auto;
+    }
+
+    #article3 .container {
+        width: 100%;
+        height: auto;
+    }
+
+    #article3 .container h2 {
+        width: 100%;
+        padding-top: 50px;
+        text-align: center;
+
+    }
+
+    .tour2 {
+        flex-wrap: wrap;
+        height: 500px;
+
+    }
+
+    .tour2 a {
+        width: 30%;
+        height: 30%;
+        margin: 20px;
+    }
+
+    .tour2 a:nth-of-type(6) {
+        display: inline-block;
+    }
+
+    .tour2 a:nth-of-type(6) p {
+        color: black;
+    }
+
+    /* 문단4 */
+
+
+    #article4 {
+        height: 550px;
+    }
+
+    .videobox {
+        width: 60vw;
+        height: 40vw;
+    }
+
+    .videobox p {
+        line-height: 2.5vw;
+        font-size: 1.5vw;
+    }
+
+    .videobox p b {
+        font-size: 2.5vw;
+    }
+
+    .videobox button {
+        width: 10vw;
+        height: 2.5vw;
+    }
+
+
+    /* 문단5 */
+
+
+    #article5 {
+        height: auto;
+    }
+
+    #article5 .container h2 {
+        width: 100%;
+        text-align: center;
+        margin-top: -50px;
+
+    }
+
+
+    #article5 .container {
+
+        justify-content: center;
+        height: 900px;
+    }
+
+    .shop {
+        width: 70%;
+
+    }
+
+    .text2 p:nth-of-type(2) {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    /* 문단6 */
+
+
+    #article6 {
+        height: auto;
+    }
+
+    #article6 .container {
+        width: 100%;
+        height: 900px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-around;
+    }
+
+    #article6 .container h2 {
+        width: 90%;
+        padding: 10px 0;
+        height: 50px;
+    }
+
+
+    .leftbox {
+        width: 80%;
+        height: auto;
+    }
+
+    .leftbox ul {
+        display: flex;
+    }
+
+    .leftbox ul li {
+        width: 150px;
+        margin: 10px
+    }
+
+
+    .rightbox {
+        height: auto;
+        flex-flow: row wrap;
+    }
+
+    .rightbox a {
+        width: 100%;
+    }
+
+}
+
+
+
+/* 테블릿 사이즈 */
+
+@media (min-width:750px) and (max-width:1216px) {
+    /* 슬라이더 */
+
+    .textbox h2 {
+        font-size: 8vw;
+    }
+
+    .textbox p {
+        font-size: 2vw;
+    }
+
+    .textbox a {
+        font-size: 1vw;
+    }
+
+    /* 선택박스 */
+    .city {
+        width: 28%;
+        height: 50px;
+    }
+
+    .container select {
+        width: 28%;
+        height: 50px;
+    }
+
+    .container .date {
+        width: 28%;
+        height: 50px;
+    }
+
+    .select-box .container a {
+        width: 45%;
+
+    }
+
+
+    /* 문단1 */
+
+
+    .slidewrap {
+        width: 80%;
+    }
+
+    .slidewrap .tour li {
+        width: 24.5%;
+    }
+
+    .tour1 .text1 h3 {
+        font-size: 17px;
+    }
+
+    .tour1 .text1 p:nth-of-type(1) {
+        margin: 5px 0;
+        font-size: 13.5px;
+    }
+
+    /* 문단2 */
+
+    #article2 {
+        height: auto;
+    }
+
+    #article2 .container {
+        height: auto;
+        justify-content: center;
+    }
+
+    .click1 {
+        width: 45%;
+    }
+
+    .click2 {
+        width: 45%;
+    }
+
+    .clickbox1 {
+        height: auto;
+    }
+
+    .clickbox1>img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .clickbox1 .imgbox2 {
+        flex-wrap: wrap;
+    }
+
+    .clickbox1 .imgbox2 a {
+        width: 35%;
+        margin: 5% 2%;
+    }
+
+    .txt p {
+        font-size: 15px;
+    }
+
+    .clickbox2 {
+        height: auto;
+
+    }
+
+    .clickbox2>img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .clickbox2 .imgbox2 {
+        flex-wrap: wrap;
+    }
+
+    .clickbox2 .imgbox2 a {
+        width: 40%;
+        margin: 5% 2%;
+    }
+
+    /* 배너 */
+
+
+    #vanner .container {
+        height: 100%;
+        width: 97%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    /* 문단3 */
+
+    #article3 {
+        height: auto;
+    }
+
+    #article3 .container {
+        width: 100%;
+    }
+
+    .tour2 {
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+    }
+
+    .tour2 a {
+        width: 26%;
+        height: 30%;
+        margin: 3%;
+        padding: 3%;
+    }
+
+    .tour2 a:nth-of-type(6) {
+        display: inline-block;
+    }
+
+    .tour2 a:nth-of-type(6) p {
+        color: black;
+    }
+
+    /* 문단4 */
+
+
+    #article4 {
+        height: 600px;
+    }
+
+    .videobox {
+        width: 60vw;
+        height: 35vw;
+    }
+
+    .videobox p {
+        font-size: 1.5vw;
+    }
+
+    .videobox p b {
+        font-size: 2.5vw;
+    }
+
+    .videobox button {
+        width: 10vw;
+        height: 2.5vw;
+        font-size: 1vw;
+    }
+
+    /* 문단5 */
+
+
+    #article5 {
+        height: auto;
+    }
+
+    #article5 .container h2 {
+        margin-top: 50px;
+    }
+
+    #article5 .container {
+        width: 100%;
+        height: 600px;
+        justify-content: space-evenly;
+    }
+
+    .shop {
+        width: 40%;
+    }
+
+    /* 문단6 */
+
+
+    #article6 {
+        height: auto;
+    }
+
+    #article6 .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-around;
+    }
+
+    #article6 .container h2 {
+        width: 90%;
+        padding: 10px 0;
+        height: 50px;
+    }
+
+    .leftbox {
+        width: 90%;
+        height: auto;
+    }
+
+    .leftbox ul {
+        display: flex;
+    }
+
+    .leftbox ul li {
+        margin: 20px 10px;
+    }
+
+    .rightbox {
+        width: 90%;
+        height: auto;
+        flex-flow: row wrap;
+        margin: 10px 0;
+    }
+
+    .rightbox a {
+        width: 45%;
+    }
+}

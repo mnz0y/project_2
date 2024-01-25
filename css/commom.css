@@ -160,11 +160,9 @@ nav .container>ul>li>a:hover {
     display: flex;
     background-color: white;
     justify-content: flex-start;
-}
-
-.menu {
     display: none;
 }
+
 
 .list {
     margin: 0 30px;
@@ -281,6 +279,12 @@ footer .container {
     header>.container>a {
         display: inline-block;
     }
+    nav{
+        height: auto;
+    }
+    nav .container{
+       display: none;
+    }
 
     nav .container img{
         display: none;
@@ -288,8 +292,19 @@ footer .container {
     nav>.container>ul{
         display: none;
     }
-    nav .menu{
-        display: none;
+    .menu{
+        height: auto;
+        display: flex;
+        flex-flow: wrap;
+        
+    }
+    .list {
+        margin: 2%;
+        width: 20%;
+    }
+    .list dl dd li {
+        padding: 5px 0;
+        font-size: 15px;
     }
 
 
@@ -369,8 +384,28 @@ footer .container {
         display: inline-block;
     }
 
-    nav {
+    nav{
+        width: 100%;
+        height: auto;
+    }
+    nav .container{
         display: none;
+     }
+
+    nav .container img{
+        display: none;
+    }
+    nav>.container>ul{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        height: auto;
+        flex-flow: wrap row;
+    }
+    .list {
+        margin: 2%;
+        width: 20%;
     }
 
 
