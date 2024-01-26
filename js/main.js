@@ -176,13 +176,24 @@ $(function () {
 
     //문단6
     $(function () {
-        $('.leftbox ul li:nth-of-type(1)').click(function () {
-            $('.rightbox:nth-of-type(2)').fadeIn().css('display', 'flex');
-            $('.rightbox:nth-of-type(3)').hide();
-        });
+        // $('.leftbox ul li:nth-of-type(1)').click(function () {
+        //     $('.rightbox:nth-of-type(2)').fadeIn().css('display', 'flex');            
+        //     $('.leftbox ul li:nth-of-type(1)').addClass('yellow', 400);
+        //     $('.rightbox:nth-of-type(3)').hide();
+        // });
 
-        $('.leftbox ul li:nth-of-type(2)').click(function () {
-            $('.rightbox:nth-of-type(3)').fadeIn().css('display', 'flex');
-            $('.rightbox:nth-of-type(2)').hide();
+        // $('.leftbox ul li:nth-of-type(2)').click(function () {
+        //     $('.rightbox:nth-of-type(3)').fadeIn().css('display', 'flex');
+        //     $('.rightbox:nth-of-type(2)').hide();
+        // });
+
+        $('.leftbox ul li').click(function () {
+            let idx =$(this).index();
+            console.log($('.rightbox').eq(idx))
+ 
+            $('.rightbox').eq(idx).fadeIn().css('display', 'flex');            
+            $('.rightbox').eq(idx-1).hide();
+            $('.leftbox ul li').removeClass('yellow', 400);
+            $(this).addClass('yellow', 400);
         });
     });

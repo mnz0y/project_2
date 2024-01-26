@@ -10,7 +10,7 @@
     }
 
     .textbox p {
-        font-size: 2vw;
+        font-size: 2.5vw;
         margin: 2vw;
     }
 
@@ -22,27 +22,27 @@
     /* 선택박스 */
 
     .select-box .container {
-        height: 350px;
+        height: 400px;
         align-content: space-evenly;
     }
 
     .city {
-        width: 80%;
+        width: 70%;
         height: 50px;
     }
 
     .container select {
-        width: 80%;
+        width: 70%;
         height: 50px;
     }
 
     .container .date {
-        width: 80%;
+        width: 70%;
         height: 50px;
     }
 
     .select-box .container a {
-        width: 80%;
+        width: 70%;
     }
 
     /* 문단1 */
@@ -50,12 +50,23 @@
     #article1 {
         height: auto;
     }
+    
 
     #article1 h2 {
-        padding: 20px;
-
+        padding: 18px;
     }
 
+    /* .tour1 .text1 h3{
+        font-size: 4vw;
+    }
+
+    .tour1 .text1 p:nth-of-type(1){
+        font-size: 3.4vw;
+    }
+    .tour1 .text1 p:nth-of-type(2){
+        font-size: 4vw;
+    } */
+   
     .slidewrap {
         width: 70%;
     }
@@ -76,12 +87,12 @@
 
     .click1 {
         width: 45%;
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .click2 {
         width: 45%;
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .clickbox1 {
@@ -99,7 +110,7 @@
     }
 
     .clickbox1 .imgbox2 a {
-        width: 65%;
+        width: 68%;
     }
 
     .clickbox2 {
@@ -125,7 +136,7 @@
 
 
     #vanner .container {
-        width: 97%;
+        width: 80%;
         height: 100%;
         display: flex;
         justify-content: space-between;
@@ -176,6 +187,12 @@
         color: black;
     }
 
+    .tour2 a p {
+        font-size: 4.1vw;
+    }
+
+
+
     /* 문단4 */
 
 
@@ -184,22 +201,23 @@
     }
 
     .videobox {
-        width: 60vw;
-        height: 40vw;
+        width: 60%;
+        height: 40%;
     }
 
     .videobox p {
-        line-height: 2.5vw;
-        font-size: 1.5vw;
+        line-height: 30px;
+        font-size: 15px;
     }
 
     .videobox p b {
-        font-size: 2.5vw;
+        font-size: 20px;
     }
 
     .videobox button {
-        width: 10vw;
-        height: 2.5vw;
+        width: 80px;
+        height: 20px;
+        font-size: 9px;
     }
 
 
@@ -250,14 +268,14 @@
     }
 
     #article6 .container h2 {
-        width: 90%;
+        width: 70%;
         padding: 10px 0;
         height: 50px;
     }
 
 
     .leftbox {
-        width: 80%;
+        width: 70%;
         height: auto;
     }
 
@@ -267,7 +285,7 @@
 
     .leftbox ul li {
         width: 150px;
-        margin: 10px
+        margin-right: 10px;
     }
 
 
@@ -376,7 +394,7 @@
     }
 
     .clickbox1 .imgbox2 a {
-        width: 35%;
+        width: 37.5%;
         margin: 5% 2%;
     }
 
@@ -408,7 +426,7 @@
 
     #vanner .container {
         height: 100%;
-        width: 97%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -423,7 +441,7 @@
     }
 
     #article3 .container {
-        width: 100%;
+        width: 85%;
     }
 
     .tour2 {
@@ -460,17 +478,18 @@
     }
 
     .videobox p {
-        font-size: 1.5vw;
+        line-height: 50px;
+        font-size: 17px;
     }
 
     .videobox p b {
-        font-size: 2.5vw;
+        font-size: 30px;
     }
 
     .videobox button {
-        width: 10vw;
-        height: 2.5vw;
-        font-size: 1vw;
+        width: 150px;
+        height: 30px;
+        font-size: 15px;
     }
 
     /* 문단5 */
@@ -511,8 +530,8 @@
 
     #article6 .container h2 {
         width: 90%;
-        padding: 10px 0;
-        height: 50px;
+        padding: 20px 0;
+        height: auto;
     }
 
     .leftbox {
@@ -525,17 +544,79 @@
     }
 
     .leftbox ul li {
-        margin: 20px 10px;
+        margin: 10px 10px 10px 0;
     }
 
     .rightbox {
-        width: 90%;
+        width:95%;
         height: auto;
         flex-flow: row wrap;
-        margin: 10px 0;
+        margin: 30px 0;
     }
 
     .rightbox a {
         width: 45%;
     }
+}
+
+/* 작은사이즈 */
+@media (max-width:499px) {
+
+/* 문단1 */
+    .tour1 .text1 h3{
+        font-size: 15px;
+    }
+    .tour1 .text1 p:nth-of-type(1){
+        font-size: 13px;
+    }
+    .tour1 .text1 p:nth-of-type(2){
+        font-size: 15px;
+    }
+
+/* 배너 */
+
+    #vanner .container img {
+        width:140px;
+        height: 100px;
+    }
+
+    .cardtext p{
+        font-size: 15px;
+        padding: 0;
+    }
+    .cardtext span{
+        font-size: 12px;
+        padding: 0;
+    }
+
+    /* 동영상 */
+    .videobox {
+        width: 70%;
+        height: 30%;
+    }
+
+    .videobox p {
+        line-height: 30px;
+        font-size: 13px;
+    }
+
+    .videobox p b {
+        font-size: 18px;
+    }
+
+    .videobox button {
+        width: 80px;
+        height: 20px;
+        font-size: 7px;
+    }
+
+    /* 문단6 */
+
+    .leftbox ul li {
+        margin: 0 10px 0 0 ;
+        font-size: 14px;
+        padding: 15px 10px;
+    }
+    
+    
 }
