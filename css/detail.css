@@ -65,10 +65,8 @@ hr{
 /* 상단박스 */
 
 .travelbox {
-    background-color: cadetblue;
     width: 73%;
     height: auto;
-
 }
 
 
@@ -134,8 +132,130 @@ hr{
 
 .intro{
     width: 100%;
-    
 }
+.intro>h2{
+   width: 95%;
+    font-size: 3em;
+    padding-top: 1.5em;
+    margin: 0 auto;
+
+}
+.intro>p{
+    font-size: 1.5em;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.4em 0 2em 0;
+}
+.imgbox2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 40px 20px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.imgbox2 img{
+    width: 45%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.imgbox2>dl{
+   width: 95%;
+   margin: 20px;
+}
+.imgbox2 dl dt{
+    font-size: 25px;
+    font-weight: bold;
+}
+.imgbox2 dl dd{
+    line-height: 35px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+.imgbox2 dl .md{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.intro h3{
+    font-size: 23px;
+    margin-top: 100px;
+}
+.info{
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 2em;
+    margin: 1em 0;
+}
+.info dl{
+    display: flex;
+}
+.info dl dt{
+    font-weight: bold;
+    color: #777;
+    margin: 5px;
+}
+.info dl dd{
+    margin: 5px 10px;
+    font-weight: bold;
+}
+
+.info1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.info1 h3{
+    width: 100%;
+}
+
+.info1 dl{
+    width: 45%;
+    margin: 30px 0;
+}
+
+.info1 dl dt{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.info1 dl dd{
+    font-size: 18px;
+    line-height: 45px;
+}
+.info2{
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 1.5em;
+}
+.info2 dl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info2 dl dt{
+    font-size: 22px;
+    line-height: 50px;
+}
+.info2 dl dd b{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.intro p:nth-of-type(2){
+    font-size: 15px;
+    margin-bottom: 150px;
+}
+
+
 
 /* 일정표 */
 
