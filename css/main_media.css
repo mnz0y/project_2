@@ -77,6 +77,10 @@
 
     /* 문단2 */
 
+    #article2{
+        height: auto;
+    }
+
 
 
     #article2 .container {
@@ -265,6 +269,7 @@
         display: flex;
         flex-flow: row wrap;
         align-content: space-around;
+        justify-content: center;
     }
 
     #article6 .container h2 {
@@ -526,6 +531,7 @@
         display: flex;
         flex-flow: row wrap;
         align-content: space-around;
+        justify-content: space-evenly;
     }
 
     #article6 .container h2 {
@@ -537,6 +543,7 @@
     .leftbox {
         width: 90%;
         height: auto;
+        padding: 0;
     }
 
     .leftbox ul {
@@ -617,6 +624,13 @@
         font-size: 14px;
         padding: 15px 10px;
     }
-    
+    .text6 h3{
+        font-size: 17px;
+    }
+    .text6 p{
+        font-size: 13px;
+        padding: 5px 0;
+    }
+   
     
 }
