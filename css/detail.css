@@ -14,19 +14,121 @@
 
 }
 
+/* 이미지상자 */
 
 #content1 .container .imgbox1 {
     width:50%;
     height: 400px;
-    background-color: aquamarine;
+    border-radius: 10px;
+    overflow: hidden;
 }
+.slide{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.slide li:not(:first-child){
+    display: none;
+}
+
+/* 텍스트상자 */
 
 #content1 .container .textbox1 {
     width: 45%;
-    height: 400px;
-    background-color: rgb(33, 168, 20);
+    height: auto;
 }
 
+.productTop span{
+    border: 1px solid #999;
+    color: #777;
+    border-radius: 5px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.textbox1 h3{
+    margin: 15px 0;
+    font-weight: 900;
+    font-size: 25px;
+}
+.textbox1 p:nth-of-type(1){
+    color: rgb(65, 65, 253);
+    margin-bottom: 10px;
+}
+
+.star-rating{
+    width: 119px;
+    display: inline-block;
+    height: 22px;
+    overflow: hidden;
+    background: url(../img/star.png)no-repeat;
+   }
+   .star-rating span{
+    display: inline-block;
+    height: 22px;
+    overflow: hidden;
+    background: url(../img/star.png)no-repeat;
+    background-position: left bottom;
+    line-height: 0;
+    vertical-align: top;
+    width: 89%;
+   }
+
+.textbox1 p:nth-of-type(2){
+    font-size: 28px;
+}
+.textbox1 p small{
+    color: #777;
+    font-size: 18px;
+    font-weight: bold;
+}
+.textbox1 p span{
+    font-size: 18px;
+}
+.textbox1 .table{
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.textbox1 .table dl{
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+
+.textbox1 .table dl dt{
+    width: 25%;
+    margin: 15px 0;
+    font-weight: bold;
+}
+.textbox1 .table dl dd{
+    width: 70%;
+    margin: 15px 0;
+}
+.textbox1 .table dl dd::after{
+    content: "";
+    background-image: url(../img/icon5.png);
+    background-size: 10px 15px;
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    vertical-align: sub;
+    margin-left: 100px;
+}
 
 
 hr{
@@ -56,8 +158,9 @@ hr{
 /* 선택박스 */
 .selectbox {
     background-color: chocolate;
-    width: 25%;
+    width: 30%;
     height: 600px;
+    border-radius: 10px;
 }
 
 
@@ -65,7 +168,7 @@ hr{
 /* 상단박스 */
 
 .travelbox {
-    width: 73%;
+    width: 68%;
     height: auto;
 }
 
@@ -107,8 +210,31 @@ hr{
     height: 200px;
     background-color: #eee;
     border-radius: 10px;
+    padding: 25px;
+}
+
+.box2 table{
+    width: 100%;
+    font-size: 20px;
 
 }
+
+.box2 button{
+    width: 100%;
+    height: 38px;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.box2 button:hover{
+    background-color: #01bfff;
+    transition: 0.5s;
+}
+
+
+
+
 .travelbox ul{
     width: 100%;
     height: 70px;
@@ -126,6 +252,8 @@ hr{
     margin-top: 20px;
     font-size: 20px;
 }
+
+
 
 
 /* 상품소개 */
