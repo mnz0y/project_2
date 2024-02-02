@@ -69,11 +69,47 @@ $(function () {
     });
 });
 
+// 문단2
+$(function(){
+    $('#subNav li:eq(0)').click(function(){
+        
+        $(this).css({borderBottom : '2px solid #555', fontWeight :'bold'});
+        $('.intro').toggle();
+    });
+    $('#subNav li:eq(1)').click(function(){
+        $(this).css({borderBottom : '2px solid #555', fontWeight :'bold'});
+        $('.schedule').toggle();
+    });
+    $('#subNav li:eq(2)').click(function(){
+        $(this).css({borderBottom : '2px solid #555', fontWeight :'bold'});
+        $('.detail').toggle();
+    });
+    $('#subNav li:eq(3)').click(function(){
+        $(this).css({borderBottom : '2px solid #555', fontWeight :'bold'});
+        $('.review').toggle();
+    });
+
+});
+
 
 // 상세정보
 $(function(){
     $('.detail button').click(function(){
-        $('.dt_hide').toggle();
-        $('.detail button').text('접기 △')
+        $('.dt_hide').toggle('1000',function(){
+            if($(this).css('display')=="block"){
+                $('.detail button').text('접기 △')
+            }else{
+                $('.detail button').text('자세히 보기 ▽')
+            }
+        
+        });
+        
+    });
+});
+
+// 리뷰
+$(function(){
+    $('.re_vis').click(function(){
+        $(this).next().toggle();
     });
 });

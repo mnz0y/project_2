@@ -239,7 +239,8 @@ hr{
 .selectbox .btn1{
     width: 100%;
   font-size: 20px;
-  background-color: #01bfff;
+  background-color: #4C58FF;
+  color:white;
 }
 .selectbox .btn2{
     width: 49%;
@@ -251,10 +252,7 @@ hr{
     width: 49%;
     background-color: white;
 }
-.selectbox button:hover{
-    border: 1px solid black;
- font-weight: bold;
-}
+
 
 
 
@@ -357,7 +355,7 @@ hr{
 
 .intro{
     width: 100%;
-    display: none;
+
 }
 .intro>h2{
    width: 95%;
@@ -487,11 +485,14 @@ hr{
 
 .schedule{
     width: 100%;
+    display: none;
 }
 
 /* 상세정보 */
 .detail {
     width: 100%;
+    display: none;
+   
 }
 
 .de_top h3{
@@ -530,3 +531,113 @@ hr{
 
 }
 
+/* 리뷰 */
+.review{
+    width: 100%;
+    margin: 50px 0;
+    display: none;
+}
+.re_top{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-bottom: 5px solid #eee;
+    padding-bottom: 30px;
+}
+.starRate{
+    width: 30%;
+    text-align: center;
+}
+.starRate p{
+    text-align: center;
+    font-size: 50px;
+}
+.rate{
+    width: 70%;
+}
+.re_top .star-rating{
+    text-align: center;
+}
+.re_top .star-rating span{
+    width: 90%;
+   margin-right: 30px;
+}
+.rate dl{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.rate dl dd:nth-of-type(1){
+    width: 30%;
+    text-align: left;
+}
+.rate dl dd:nth-of-type(2){
+    width: 60%;
+    
+}
+.rate dl dd:nth-of-type(3){
+    width: 20%;
+}
+.rate dl dd progress{
+    width: 250px;
+}
+.re_box{
+    border-bottom: 1px solid #eee;
+}
+.re_vis{
+    padding: 20px 0 ;
+    cursor: pointer;
+}
+.re_vis p::after{
+    content: "";
+    background-image:url(../img/V_icon.png);
+    background-size: 15px 8px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 15px;
+    height: 8px;
+}
+.re_vis .star-rating span{
+    width: 100%;
+}
+.re_hide{
+    display: none;
+}
+.re_vis p{
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+    position: relative;
+}
+
+.re_hide p:nth-of-type(1){
+    background-color: #eee;
+    margin: 5px 0;
+    padding: 15px 10px 20px 15px;
+    border-radius: 10px;
+}
+.re_hide p span{
+    color: #4C58FF;
+    margin: 0 5px;
+}
+.re_hide p:nth-of-type(2){
+    padding: 20px 10px 20px 0;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.re_img img{
+    width: 45%;
+    border-radius: 10px;
+    margin: 1% 0;
+}
+.re_hide dl{
+    background-color: #01c0ff52;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 30px;}
+.re_hide dl dt{
+    font-weight: bold;
+}
