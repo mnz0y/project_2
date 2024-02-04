@@ -47,16 +47,13 @@ setInterval(slide, 5000);
 
 //선택박스
 let priceSum = 749000;
-
 $('#total_count').append('<span><b>' + priceSum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + '</b>원 </span>');
 
 $(function () {
     $('.plus').click(function () {
         $(this).prev().val(parseInt($(this).prev().val()) + 1);
         let sum = parseInt($(this).prev().val() * priceSum);
-
         $('#total_count span').html('<span><b>' + sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + '</b> 원 </span>');
-
     });
 
     $('.minus').click(function () {
@@ -69,27 +66,42 @@ $(function () {
     });
 });
 
+
+
+
+
 // 문단2
 $(function(){
     $('#subNav li:eq(0)').click(function(){
-        
-        $(this).css({borderBottom : '2px solid #555', fontWeight :'bold'});
-        $('.intro').toggle();
+        $('.intro').show();
+        $('.schedule, .detail, .review').hide();
+        $('#subNav li').removeClass('navCss');
+        $(this).addClass('navCss');
     });
     $('#subNav li:eq(1)').click(function(){
-        $(this).css({borderBottom : '2px solid #555', fontWeight :'bold'});
-        $('.schedule').toggle();
+        $('.schedule').show();
+        $('.intro, .detail, .review').hide();
+        $('#subNav li').removeClass('navCss');
+        $(this).addClass('navCss');
     });
+
     $('#subNav li:eq(2)').click(function(){
-        $(this).css({borderBottom : '2px solid #555', fontWeight :'bold'});
-        $('.detail').toggle();
+        $('.detail').show();
+        $('.intro, .schedule, .review').hide();
+        $('#subNav li').removeClass('navCss');
+        $(this).addClass('navCss');
     });
     $('#subNav li:eq(3)').click(function(){
-        $(this).css({borderBottom : '2px solid #555', fontWeight :'bold'});
-        $('.review').toggle();
+        $('.review').show();
+        $('.intro, .detail, .schedule').hide();
+        $('#subNav li').removeClass('navCss');
+        $(this).addClass('navCss');
     });
 
 });
+
+
+
 
 
 // 상세정보
@@ -101,11 +113,10 @@ $(function(){
             }else{
                 $('.detail button').text('자세히 보기 ▽')
             }
-        
         });
-        
     });
 });
+
 
 // 리뷰
 $(function(){
