@@ -310,6 +310,7 @@
     text-align: center;
     font-size: 20px;
     padding: 10px 0;
+    cursor: pointer;
 }
 
 .show1{
@@ -327,15 +328,14 @@
     width: 50%;
     height: 50px;
     text-align: center;
-    
     font-size: 20px;
     padding: 10px 0;
+    cursor: pointer;
 }
 .clickbox1{
     width: 100%;
     height: 500px;
     text-align: center;
-    
 }
 .clickbox1 .imgbox2{
     display: flex;
@@ -375,6 +375,7 @@
     height: 500px;
     text-align: center;
     display: none;
+    cursor: pointer;
 }
 .clickbox2 .imgbox2{
     display: flex;
