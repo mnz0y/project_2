@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /* 문단1 */
 
 #content1 {
@@ -595,51 +596,71 @@ hr{
     background-image: url(../img/sub8.jpg);
    background-size: cover;
    overflow: hidden;
+   background-position: center;
+
 }
 .sch_box2{
     background-image: url(../img/sub11.jpg);
    background-size: cover;
    overflow: hidden;
+   background-position: center;
+
 }
 .sch_box3{
     background-image: url(../img/sub12.jpg);
    background-size: cover;
    overflow: hidden;
+   background-position: center;
+
 }
 .sch_box4{
     background-image: url(../img/sub5.jpg);
    background-size: cover;
    overflow: hidden;
+   background-position: center;
+
 }
 .sch_box5{
     background-image: url(../img/sub13.jpg);
    background-size: cover;
    overflow: hidden;
+   background-position: center;
+
 }
 .sch_box6{
     background-image: url(../img/sub7.jpg);
    background-size: cover;
    overflow: hidden;
+   background-position: center;
+
 }
 .sch_box7{
     background-image: url(../img/sub15.jpg);
    background-size: cover;
    overflow: hidden;
+   background-position: center;
+
 }
 .sch_box8{
     background-image: url(../img/sub16.jpg);
    background-size: cover;
    overflow: hidden;
+   background-position: center;
+
 }
 .sch_box9{
     background-image: url(../img/sub3.jpg);
    background-size: cover;
    overflow: hidden;
+   background-position: center;
+
 }
 .sch_box10{
     background-image: url(../img/sub4.jpg);
    background-size: cover;
    overflow: hidden;
+   background-position: center;
+
 }
 .sch_txt{
     background-color: #4c58ff8f;
@@ -806,3 +827,702 @@ hr{
 .re_hide dl dt{
     font-weight: bold;
 }
+
+
+/* 모바일 사이즈 */
+@media (max-width:749px){
+/* 문단1 */
+
+#content1 {
+    height: auto;
+}
+
+#content1 .container {
+    width: 100%;
+    flex-flow: wrap;
+   justify-content: center;
+
+}
+
+/* 이미지상자 */
+
+#content1 .container .imgbox1 {
+    width:100%;
+    height: 350px;
+    border-radius: 0;
+    margin: 1% 0;
+}
+
+
+/* 텍스트상자 */
+
+#content1 .container .textbox1 {
+    width: 90%;
+    margin: 4% 0;
+}
+
+.productTop span{
+    font-size: 11px;
+}
+.textbox1 h3{
+    font-size: 20px;
+}
+
+.textbox1 .table{
+    font-size: 16px;
+}
+
+hr{
+    width: 100%;
+    border: 5px solid #eee;
+   
+}
+
+/* 문단2 */
+
+
+#content2 .container {
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+#content2>.container>h2 {
+    width: 90%;
+    height: 100px;
+}
+
+
+/* 상단박스 */
+
+.travelbox {
+    width: 90%;
+}
+.top{
+    height: auto;
+}
+.box1{
+    height:auto;
+    flex-wrap: wrap;
+}
+.box1 .icon2{
+    font-size: 13px;
+    width: 30%;
+    margin: 1%;
+}
+.box1 .icon2 img{
+    width:25px;
+    height: 25px;
+}
+
+.box2{
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    margin: 2% 0;
+}
+.box2 table{
+    width: 100%;
+    font-size: 16px;
+    margin:0 ;
+}
+.box2 button{
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    margin: 1.5% 0;
+    padding: 0.5%;
+}
+.box2:nth-of-type(3){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top_text{
+    width: 80%;
+}
+.top_img{
+    width: 65px;
+    height: 65px;
+    background-position: center;
+    top: 0;
+    left: 0;
+    animation: navi 4s linear infinite ;
+}
+@keyframes navi{
+    0%{top: 0;}
+    50%{width: 50px;}
+    100%{top: 0;}
+}
+
+.top_text p:nth-of-type(1){
+    font-size: 19px;
+    margin:0 0 7% 0;
+}
+.top_text p:nth-of-type(2){
+    font-size: 15px;
+}
+
+
+/* 상품소개 */
+
+.intro>h2{
+   width: 100%;
+    font-size: 2em;
+    padding-top: 1.5em;
+
+}
+.intro>p{
+    font-size: 1.2em;
+    width: 100%;
+    padding: 0.4em 0 2em 0;
+}
+.imgbox2{
+    padding: 5%;
+    width: 100%;
+}
+
+.imgbox2 img{
+    width: 100%;
+    margin: 5% 0;
+}
+
+.imgbox2>dl{
+   width: 100%;
+   margin: 0;
+}
+.imgbox2 dl dt{
+    font-size: 20px;
+    font-weight: bold;
+}
+.imgbox2 dl dd{
+    font-size: 18px;
+}
+
+.intro h3{
+    font-size: 23px;
+    margin-top: 100px;
+}
+
+.info1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.info1 h3{
+    width: 100%;
+}
+
+.info1 dl{
+    width: 100%;
+}
+
+.info1 dl dd{
+    font-size: 17px;
+}
+
+
+/* 일정표 */
+
+.scheduleInfo p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.scheduleInfo p small{
+    font-size: 18px;
+}
+
+.scheduleInfo ul li{
+    font-size: 17px;
+}
+.sch_imgbox{
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+}
+.sch_imgbox>div{
+    width: 100%;
+    max-height:400px;
+    margin: 3% 0;
+}
+
+.sch_txt{
+    top: 165px;
+}
+
+
+/* 리뷰 */
+.review{
+    margin: 20px 0 50px 0;
+}
+.re_top{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+.starRate{
+    width: 100%;
+}
+
+.rate{
+    width: 100%;
+}
+
+.rate dl{
+   margin: 1% 0;
+}
+.rate dl dd:nth-of-type(1){
+    width: 25%;
+}
+.rate dl dd:nth-of-type(2){
+    width: 55%;
+    
+}
+.rate dl dd:nth-of-type(3){
+    width: 20%;
+}
+.rate dl dd progress{
+    width: 40vw;
+}
+.re_vis p{
+    font-size: 17px;
+}
+.re_vis>span{
+    font-size: 15px;
+}
+
+.re_img img{
+    width: 90%;
+}
+.re_hide p{
+    font-size: 15px;
+}
+
+
+/* 선택박스 */
+.selectbox {
+    width: 100%;
+    height: auto;
+    position: sticky;
+}
+
+.selectbox .ess {
+    display: none;
+}
+
+.selectbox>dl{
+    display: none;
+}
+
+}
+
+
+
+/* 테블릿 사이즈 */
+
+@media (min-width:750px) and (max-width:1216px) {
+    
+
+/* 문단1 */
+
+#content1 {
+    height: auto;
+}
+
+#content1 .container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 이미지상자 */
+
+#content1 .container .imgbox1 {
+    width:90%;
+    margin: 1% 0;
+}
+
+/* 텍스트상자 */
+
+#content1 .container .textbox1 {
+    width: 90%;
+    height: auto;
+    margin: 3% 0;
+}
+
+hr{
+    width: 100%;
+    border: 5px solid #eee;
+}
+
+/* 문단2 */
+
+
+#content2 .container {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+#content2>.container>h2 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* 상단박스 */
+
+.travelbox {
+    width: 90%;
+}
+.top{
+    height: auto;
+}
+
+.box1{
+    font-size: 14px;
+    margin: 1% 0;
+}
+.box1 .icon2{
+    width: 20%;
+}
+
+.box2{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    margin: 1% 0;
+}
+
+.box2 table{
+    margin: 0 0 1% 0;
+}
+
+.box2 button{
+    height: auto;
+    font-size: 16px;
+   padding: 0.5%;
+}
+.box2:nth-of-type(3){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.top_text{
+    display: inline-block;
+    width: 80%;
+}
+.top_img{
+    width: 70px;
+    background-position: center;
+    height: 70px;
+    top: -10px;
+    left: 0;
+    animation: navi 4s linear infinite ;
+}
+@keyframes navi{
+    0%{top: 0;}
+    50%{width: 60px;}
+    100%{top: 0;}
+}
+.top_text p:nth-of-type(1){
+    font-size: 20px;
+    margin:0 0 30px 0;
+}
+
+/* 상품소개 */
+
+
+.intro>h2{
+   width: 95%;
+    font-size: 2.5em;
+}
+.intro>p{
+    font-size: 1.3em;
+}
+
+.info1 dl dd{
+    font-size: 16px;
+    line-height: 40px;
+}
+
+
+/* 일정표 */
+
+.sch_imgbox{
+    justify-content: space-between;
+}
+.sch_imgbox>div{
+    width: 45%;
+}
+
+
+/* 선택박스 */
+.selectbox {
+    width: 100%;
+    height: auto;
+
+}
+
+.selectbox .ess {
+   display: none;
+}
+
+.ess>p{
+    font-size: 14px;
+}
+.selectbox>dl{
+    display: none;
+}
+ 
+}
+
+/* 최소사이즈 */
+@media (max-width:499px) {
+
+
+
+/* 텍스트상자 */
+
+#content1 .container .textbox1 {
+    width: 95%;
+}
+.productTop span{
+    font-size: 10px;
+}
+.textbox1 h3{
+    font-size: 18px;
+}
+.textbox1 p:nth-of-type(2){
+    font-size: 25px;
+}
+.textbox1 p small{
+    font-size: 16px;
+}
+.textbox1 p span{
+    font-size: 16px;
+}
+
+.textbox1 .table{
+    font-size: 14px;
+}
+
+
+/* 문단2 */
+
+
+#content2>.container>h2 {
+    width: 90%;
+    height: 90px;
+}
+
+
+/* 상단박스 */
+
+.travelbox {
+    width: 100%;
+}
+.box1{
+    padding: 3%;
+}
+
+.box1 .icon2{
+    font-size: 13px;
+    width: 48%;
+}
+.box1 .icon2 img{
+    width:25px;
+    height: 25px;
+}
+
+.box2{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    margin: 2% 0;
+}
+.box2 table{
+    width: 100%;
+    font-size: 15px;
+}
+
+.box2 button{
+    font-size: 15px;
+}
+
+.top_text{
+    width: 80%;
+}
+.top_img{
+    width: 50px;
+    height: 50px;
+}
+@keyframes navi{
+    50%{width: 40px;}
+}
+
+.top_text p:nth-of-type(1){
+    font-size: 16px;
+}
+.top_text p:nth-of-type(2){
+    font-size: 13px;
+}
+
+
+/* 상품소개 */
+
+.intro>h2{
+   width: 100%;
+    font-size: 1.6em;
+    padding-top: 1em;
+}
+.intro>p{
+    font-size: 1.2em;
+    width: 100%;
+    padding: 0.4em 0 2em 0;
+}
+.imgbox2{
+    padding: 5%;
+    width: 100%;
+}
+
+.imgbox2 img{
+    width: 100%;
+    margin: 5% 0;
+}
+
+.imgbox2>dl{
+   width: 100%;
+   margin: 0;
+}
+.imgbox2 dl dt{
+    font-size: 20px;
+    font-weight: bold;
+}
+.imgbox2 dl dd{
+    font-size: 18px;
+}
+
+.intro h3{
+    font-size: 23px;
+    margin-top: 100px;
+}
+
+.info1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.info1 h3{
+    width: 100%;
+}
+
+.info1 dl{
+    width: 100%;
+}
+
+.info1 dl dd{
+    font-size: 17px;
+}
+
+
+/* 일정표 */
+
+.scheduleInfo p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.scheduleInfo p small{
+    font-size: 18px;
+}
+
+.scheduleInfo ul li{
+    font-size: 17px;
+}
+.sch_imgbox{
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+}
+.sch_imgbox>div{
+    width: 100%;
+    max-height:400px;
+    margin: 3% 0;
+}
+
+.sch_txt{
+    top: 165px;
+}
+
+
+/* 리뷰 */
+.review{
+    margin: 20px 0 50px 0;
+}
+.re_top{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+.starRate{
+    width: 100%;
+}
+
+.rate{
+    width: 100%;
+}
+
+.rate dl{
+   margin: 1% 0;
+}
+.rate dl dd:nth-of-type(1){
+    width: 25%;
+}
+.rate dl dd:nth-of-type(2){
+    width: 55%;
+    
+}
+.rate dl dd:nth-of-type(3){
+    width: 20%;
+}
+.rate dl dd progress{
+    width: 40vw;
+}
+.re_vis p{
+    font-size: 17px;
+}
+.re_vis>span{
+    font-size: 15px;
+}
+
+.re_img img{
+    width: 90%;
+}
+.re_hide p{
+    font-size: 15px;
+}
+
+
+/* 선택박스 */
+.selectbox {
+    width: 100%;
+    height: auto;
+    position: sticky;
+}
+
+.selectbox .ess {
+    display: none;
+}
+
+.selectbox>dl{
+    display: none;
+}
+
+}
+ 
