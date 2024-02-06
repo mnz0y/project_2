@@ -276,7 +276,10 @@ hr{
 .selectbox {
     width: 100%;
     height: auto;
-    position: sticky;
+    bottom: 0;
+    top: auto;
+    margin: 0 2%;
+    background-color: white;
 }
 
 .selectbox .ess {
@@ -437,7 +440,10 @@ hr{
 .selectbox {
     width: 100%;
     height: auto;
-
+    margin: 2%;
+    top: auto;
+    bottom: 0;
+    background-color: white;
 }
 
 .selectbox .ess {
@@ -551,7 +557,9 @@ hr{
 
 
 /* 상품소개 */
-
+.intro{
+    padding: 0 2%;
+}
 .intro>h2{
     font-size: 1.5em;
 }
@@ -614,7 +622,9 @@ hr{
 
 
 /* 일정표 */
-
+.schedule{
+    padding: 0 2%;
+}
 .schedule>p{
     font-size: 13px;
 }
@@ -633,6 +643,9 @@ hr{
 }
 
 /* 상세정보 */
+.detail{
+    padding: 0 2%;
+}
 .de_top dl{
     font-size: 15px;
 }
@@ -647,6 +660,9 @@ hr{
 }
 
 /* 리뷰 */
+.review{
+    padding: 0 2%;
+}
 .starRate p{
     font-size: 45px;
 }
@@ -676,7 +692,8 @@ hr{
 .selectbox {
     width: 100%;
     height: auto;
-    position: sticky;
+    top: auto;
+    bottom: 0;
 }
 
 .selectbox .ess {
@@ -686,9 +703,14 @@ hr{
 .selectbox>dl{
     display: none;
 }
+.selectbox .btn1{
+   width: 98%;
+   margin: 1%;
+   
+}
 .selectbox .btn2{
-    width: 48%;
-    margin: 0 1%;
+    width: 47%;
+    margin: 1%;
     font-size: 15px;
 }
 
